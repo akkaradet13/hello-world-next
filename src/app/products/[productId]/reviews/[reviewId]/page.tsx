@@ -10,9 +10,9 @@ export default function ProductReviewPage({
 }: {
   params: { productId: string; reviewId: string };
 }) {
-  if (getRandInt(2) === 1) {
-    throw new Error("Random error");
-  }
+  // if (getRandInt(2) === 1) {
+  //   throw new Error("Random error");
+  // }
   if( parseInt(params.productId) > 10 || parseInt(params.reviewId) > 10) {
     notFound();
   }
